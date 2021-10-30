@@ -18,6 +18,6 @@ public class HelloControllerIT {
     @Test
     public void getHello() throws Exception {
         ResponseEntity<String> response = template.getForEntity("/", String.class);
-        assertThat(response.getBody()).isEqualTo("Greetings from Spring Boot with Github Actions!");
+        assertThat(response.getBody()).isEqualTo("Greetings from Spring Boot with Github Actions with removed azure maven plugin!");
     }
 }
